@@ -1,0 +1,18 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <section class = "petitprince">
+        <img class="petitprince" src = "/assets/images/petitprince2.png">
+        <article class = "description">
+            <p>{{atelier.description}}</p>
+        </article>
+    </section>
+        <article class="name">
+            <h1>{{atelier.name}}</h1>
+        </article>
+    <section class = "image-atelier">
+    {% for image in images %}
+        <img class="image" src = '/assets/images/{{image.image}}'>
+    {% endfor %}
+    </section>
+{% endblock %}

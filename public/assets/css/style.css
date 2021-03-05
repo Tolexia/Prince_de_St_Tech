@@ -1,0 +1,167 @@
+@font-face{
+    font-family: "Cobol";
+    src: url("/assets/fonts/Cobol.otf") format("truetype");
+}
+@font-face{
+    font-family: "Cobol_Bold";
+    src: url("/assets/fonts/Cobol_Bold.otf") format("truetype");
+}
+@font-face{
+    font-family: "Cobol_Light";
+    src: url("/assets/fonts/Cobol_Light.otf") format("truetype");
+}
+@font-face{
+    font-family: "Cobol_Medium";
+    src: url("/assets/fonts/Cobol_Medium.otf") format("truetype");
+}
+
+body{
+    background-image: url(/assets/images/background.jpg);
+    background-color: black;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Cobol";
+    font-size: 30px;
+    color: yellow;
+}
+
+.lienformulaire{
+    background-color: yellow;
+    border:solid 1px yellow;
+    border-radius: 50%;
+    margin-top: 20px;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: 42%;
+}
+
+h1{
+    color: yellow;
+    justify-content: center;
+    font-family: "Cobol_Bold";
+    font-size: 40px;
+    margin-left: 30px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+}
+
+.planete{
+    margin-left: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.home{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.atelier{
+    display: flex;
+    justify-content: space-between;
+}
+
+.prince{
+    position: relative;
+    bottom: 200px;
+    left: 1500px;
+    height: 300px;
+    width: 300px;
+}
+.logo{
+    opacity: 0.4;
+    filter: invert(100%);
+    width: 300px;
+    height: 180px;
+}
+
+.description{
+    position: relative;
+    width: 800px;
+    bottom: 190px;
+    left: 600px;
+    border: solid;
+    padding-left: 10px;
+}
+.home{
+    margin-top: -450px;
+}
+
+.intro{
+    position: relative;
+    width: 1000px;
+    bottom: 500px;
+    left: 400px;
+    border: solid;
+    padding-left: 10px;
+}
+.intro>p{
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px white;
+}
+
+.formulaire{
+    display: flex;
+    width: 30%;
+    border: solid;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 35%;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.petitprince{
+    position: relative;
+    top: 70px;
+    left: 280px;
+    height: 250px;
+    width: 250px;
+    margin-top: -150px;
+}
+
+.image-atelier{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.image{
+    margin-bottom: 10px;
+    height: 400px;
+    width: 400px;
+    transition: 0.5s;
+}
+
+.image:hover{
+    transform: scale(1.2);
+}
+
+textarea{
+    width: 80%;
+    border-radius: 8px;
+}
+
+#titre{
+    margin-left: 37%;
+}
+
+#submit{
+    width: 25%;
+    border-radius: 8px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+input{
+    width: 50%;
+    border-radius: 8px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}

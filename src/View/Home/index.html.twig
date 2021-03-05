@@ -1,0 +1,29 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+<img class="prince" src="/assets/images/petitprince1.png" alt="">
+<div class = "intro">
+    <p>
+        Salut à toi jeune utilisateur/rice ! <br>
+        Je me présente, je suis le petit prince, ravi de te connaître !
+         Tu te demandes ce qu'est St-Ex ? <br>
+        Saint-Ex est un espace d’accueil et d’échange dédié aux pratiques artistiques digitales, qui a
+        pour vocation de participer au développement culturel de la région.<br>
+        Lieu de découverte, de production et de diffusion artistique, Saint-Ex
+        développe une programmation caractérisée par sa pluridisciplinarité :
+        expositions, événements, ateliers de pratiques autour des nouvelles
+        technologies, formations, rendez-vous pour petits et grands, tu peux trouver tout ça là-bas !<br>
+        Je te propose de me suivre dans mon aventure pour aller explorer quelques ateliers que St-Ex propose ?<br>
+        Tu viens dis ? Ca va être sympa !
+    </p>
+</div>
+<div class="home">
+    {% for planete in planetes %}
+    <div class="planets">
+        <div class="title"><h1>{{planete.name}}</h1></div>
+        <a href="/Atelier/read/{{planete.id}}"><img class="planete" src="/assets/images/{{planete.image}}" alt="planete"></a>
+    </div>
+    {% endfor %}
+    <a class="lienformulaire" href="/Atelier/add">Ajouter un atelier</a>
+</div>    
+{% endblock %}
